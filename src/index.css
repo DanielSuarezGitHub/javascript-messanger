@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+:root {
+  --plorple: #5f41ce;
+  --offwhite: #FAF9F6;
+  font-family: 'Mukta', sans-serif;
+  font-style: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.formContainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--plorple);
+}
+
+.formWrapper {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 20px 60px;
+  background-color: var(--offwhite);
+  border-radius: 18px;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label:has(img) {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+label > img {
+  width: 24px;
+}
+
+.formWrapper span:nth-child(1) {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.formWrapper input {
+  padding: 5px;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+.formWrapper span {
+  font-size: 20px;
+}
+
+.formWrapper button {
+  padding: 10px 20px;
+  background-color: black;
+  color: var(--offwhite);
+  cursor: pointer;
+  border: none;
+}
